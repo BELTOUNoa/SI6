@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajout de produit</title>
+	<meta charset="utf-8">
+	<link href="naruto.css" rel="stylesheet">
+</head>
+<body>
+
+	<h1>Saisie de produit</h1>
+	<form name="formInv" method="post" action="rqtInventaire.php"  >
+<label>ID Produit: </label>
+<input type="text" name="prd_id">
+<p></p>
+<label>Nom Produit: </label>
+<input type="text" name="prd_nom">
+<p></p>
+<label>Quantité: </label>
+<input type="number" min="0" max="99999" step="1" name="prd_qte">
+<p></p>
+<label>Prix unitaire: </label>
+<input type="number" min="0" max="99999" step="0.01" name="prd_pu">
+<p></p>
+<label>Catégorie: </label>
+<input type="text" name="prd_cat">
+
+
+<p>
+	<input type="submit" value="Ajouter Produit">
+	<input type="reset" name="Effacer">
+
+
+
+</p>
+<p><a href="menu.html"><input type="button" value="Retour"></a></p>
+</form>
+
+</body>
+</html>
